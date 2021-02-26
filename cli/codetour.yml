@@ -1,0 +1,12 @@
+ProjectName: CodeTours CLI
+Theme: Dark
+
+PrimaryTour:
+  Before:
+    Text: Welcome to the codetour!
+  Sequence:
+    - Select::Files: ["main.go"]
+      Text: The main.go file is where the CLI pulls the Docker image and runs the React website.
+
+    - Select::Directories: ["dist"]
+      Text: The dist folder is where the CLI is compiled for both Linux and Windows platforms.
