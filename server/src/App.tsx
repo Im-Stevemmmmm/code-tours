@@ -1,10 +1,21 @@
+import { BrowserRouter, Route, Switch } from "react-router-dom"
+import Index from "./pages"
+import Tour from "./pages/tour"
+
 export default function App() {
   return (
-    <div>
-      <header className="text-center mt-20">
-        <h1 className="font-bold text-4xl">CodeTour Code Tour</h1>
-        <p className="text-gray-500">Roboto oment</p>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div>
+        <Switch>
+          <Route path="/tour">
+            <Tour />
+          </Route>
+
+          <Route path="/">
+            <Index />
+          </Route>
+        </Switch>
+      </div>
+    </BrowserRouter>
   )
 }
